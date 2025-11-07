@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <script>
+        function time(){
+            var t=new Date();
+            var h=t.getHours();
+            var m=t.getMinutes();
+            var s=t.getSeconds();
+            var ti=h+":"+m+":"+s;
+            document.clock.text1.value=ti;
+            setTimeout("time()",1000);
+        }
+    </script>
+</head>
+<body bgcolor="blue" onload="time()">
+    <form action="" name="clock">
+        <center><h1>System Time</h1>
+            <br><br><input type="text" name="text1" id="text">
+        </center>
+    </form>
+</body>
+</html>
