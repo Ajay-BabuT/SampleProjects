@@ -1,0 +1,10 @@
+from tkinter import *
+win=Tk()
+win.geometry("300x400")
+a=Label(win,text="hello world good morning",bg="red",width="10")
+a.pack()
+b=Message(win,text="hello world good morning",bg="red",width="10")
+b.pack()
+t=Text(win,width=20,height=5)
+t.pack()
+win.mainloop()
